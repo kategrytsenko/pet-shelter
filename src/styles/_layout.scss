@@ -81,6 +81,15 @@ $section-bottom-margin: 40px;
   padding: 40px;
 }
 
+.l-help-page {
+  display: flex;
+  justify-content: center;
+  &__info {
+    max-width: 400px;
+    text-align: center;
+  }
+}
+
 .l-footer {
   width: 100%;
   background: $background-dark-color;

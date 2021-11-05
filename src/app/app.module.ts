@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { ReportPageComponent } from './components/report-page/report-page.component';
 import { HelpPageComponent } from './components/help-page/help-page.component';
+import { AdoptionPageComponent } from './components/adoption-page/adoption-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HelpPageComponent } from './components/help-page/help-page.component';
     FooterComponent,
     MainPageComponent,
     ReportPageComponent,
-    HelpPageComponent
+    HelpPageComponent,
+    AdoptionPageComponent
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,10 @@ export class HeaderComponent implements OnInit {
       route: '/help'
     },
     {
+      title: 'Прихистити',
+      route: '/adoption'
+    },
+    {
       title: 'Звітність',
       route: '/report'
     },
