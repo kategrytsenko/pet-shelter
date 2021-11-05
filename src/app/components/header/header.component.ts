@@ -6,10 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  public activeLink: string = '';
+  public links: { title: string, route: string }[] = [
+    {
+      title: 'Головна',
+      route: '/'
+    },
+    {
+      title: 'Як допомогти',
+      route: '/help'
+    },
+    {
+      title: 'Звітність',
+      route: '/report'
+    },
+  ];
 
-  constructor() { }
+  constructor () {
+  }
 
-  ngOnInit(): void {
+  ngOnInit (): void {
+    this.activeLink = window.location.pathname;
   }
 
 }

@@ -1,6 +1,7 @@
 @import "vars";
 
 $header-height: 80px;
+$section-bottom-margin: 40px;
 
 .l-header {
   width: 100%;
@@ -15,13 +16,16 @@ $header-height: 80px;
   &__inner-container {
     height: $header-height;
   }
-  &__contacts {
+  &__nav {
     &-link {
       display: flex;
       align-items: center;
       margin: 0 10px;
       &.l-fa-link {
         font-size: 18px;
+      }
+      &.active {
+        color: $color-primary;
       }
     }
     .l-header__contacts-button {
@@ -45,18 +49,36 @@ $header-height: 80px;
 
 .l-main-page {
   &__banner {
-    height: 500px;
     width: 100%;
-    background: $color-accent;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 20px;
+    margin-bottom: $section-bottom-margin;
+    padding: 20px 0;
+    //background: $color-primary;
+    //background: $color-accent;
+    //background: $background-light-color;
+    background: lighten($color-primary, 20%);
+    &-info {
+      margin-top: 50px;
+    }
+    &-inner {
+      display: flex;
+      justify-content: space-around;
+      height: 500px;
+    }
     &-img-wrapper {
       img {
         max-height: 100%;
       }
     }
   }
+}
+
+.l-about-us {
+  display: flex;
+  margin-bottom: $section-bottom-margin;
+}
+
+.l-info-block {
+  padding: 40px;
 }
 
 .l-footer {
