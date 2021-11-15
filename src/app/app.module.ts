@@ -14,6 +14,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { ReportPageComponent } from './components/report-page/report-page.component';
 import { HelpPageComponent } from './components/help-page/help-page.component';
 import { AdoptionPageComponent } from './components/adoption-page/adoption-page.component';
+import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AdoptionPageComponent } from './components/adoption-page/adoption-page.
     MainPageComponent,
     ReportPageComponent,
     HelpPageComponent,
-    AdoptionPageComponent
+    AdoptionPageComponent,
+    ImageGalleryComponent
   ],
   imports: [
     BrowserModule,

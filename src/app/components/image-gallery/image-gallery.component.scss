@@ -1,0 +1,19 @@
+.gallery-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: flex-end;
+}
+
+.gallery-image-wrapper {
+  flex-grow: 1;
+  margin: 2.5px 5px;
+  width: calc((100% - 30px)/3);
+  //width: 250px;
+  //height: 250px;
+  overflow: hidden;
+  .gallery-image {
+    width: 100%;
+  }
+}

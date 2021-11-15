@@ -81,6 +81,14 @@ $section-bottom-margin: 40px;
   padding: 40px;
 }
 
+.l-animals {
+  display: flex;
+  justify-content: space-between;
+  &__gallery {
+    width: 40%;
+  }
+}
+
 .l-help-page {
   display: flex;
   justify-content: center;
@@ -89,6 +97,8 @@ $section-bottom-margin: 40px;
     text-align: center;
   }
 }
+
+
 
 .l-footer {
   width: 100%;
@@ -101,7 +111,8 @@ $section-bottom-margin: 40px;
 
 .l-max-container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0 20px;
 }
 
