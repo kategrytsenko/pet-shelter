@@ -10,3 +10,21 @@ a {
 .text-center {
   text-align: center;
 }
+
+.important-text {
+  text-decoration: underline;
+  color: $color-primary;
+}
+
+.decoration-underline {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    background-color: $color-primary;
+  }
+}

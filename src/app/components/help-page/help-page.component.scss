@@ -1,9 +1,33 @@
-.l-help-page {
+.help-page {
   display: flex;
+  flex-direction: column;
   &__info {
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 20px;
+    &-left,
+    &-right {
+      padding: 30px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      &-left,
+      &-right {
+        padding: 10px;
+      }
+    }
+  }
+  &__needs {
+    display: flex;
+    flex-direction: column;
+    &-list {
+      display: flex;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+      &-column {
+        margin: 0 5px;
+        > h3 {
+          text-align: center;
+        }
+      }
+    }
   }
 }

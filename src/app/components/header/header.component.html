@@ -1,25 +1,47 @@
-<header class="l-header">
-  <div class="l-header__inner-container l-max-container flex l-space-b l-align-c">
+<header class="header">
+  <div class="header__inner-container l-max-container flex l-space-b l-align-c">
     <div>
-      <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+      <a routerLink="/" (click)="activeLink = links[0].route">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+      </a>
     </div>
-    <div class="l-header__nav flex">
+<!--    TODO: hamburger menu-->
+    <div class="header__nav flex">
       <a *ngFor="let link of links"
          routerLink="{{link.route}}"
          (click)="activeLink = link.route"
-         class="l-header__nav-link"
+         class="header__nav-link"
          [ngClass]="{'active': activeLink === link.route}">{{link.title}}</a>
-      <a class="l-header__nav-link" href="">
+      <a class="header__nav-link" href="">
         <mat-icon>call</mat-icon>
         +380 (97) 221 75 93</a>
-<!--      <a class="l-header__nav-link" href="">-->
+<!--      <a class="header__nav-link" href="">-->
 <!--        <mat-icon>email</mat-icon>-->
 <!--      </a>-->
-      <a class="l-header__nav-link l-fa-link" href="https://www.facebook.com/mini.prylulok.yuriya.mykytiuka/"
+      <a class="header__nav-link l-fa-link" href="https://www.facebook.com/mini.prylulok.yuriya.mykytiuka/"
          target=”_blank”>
         <mat-icon fontSet="fab" fontIcon="fa-facebook"></mat-icon>
       </a>
-      <button class="l-header__contacts-button" mat-raised-button color="primary">DONATE</button>
+      <button class="header__contacts-button" mat-raised-button color="primary">DONATE</button>
     </div>
+
+    <div class="header__nav-mobile" [ngClass]="{'header__nav-mobile--showed': isMenuShowed}">
+      <a *ngFor="let link of links"
+         routerLink="{{link.route}}"
+         (click)="activeLink = link.route; isMenuShowed = false"
+         class="header__nav-mobile-link"
+         [ngClass]="{'active': activeLink === link.route}">{{link.title}}</a>
+      <a class="header__nav-mobile-link" href="">
+        <mat-icon>call</mat-icon>
+        +380 (97) 221 75 93</a>
+      <!--      <a class="header__nav-link" href="">-->
+      <!--        <mat-icon>email</mat-icon>-->
+      <!--      </a>-->
+      <a class="header__nav-mobile-link l-fa-link" href="https://www.facebook.com/mini.prylulok.yuriya.mykytiuka/"
+         target=”_blank”>
+        <mat-icon fontSet="fab" fontIcon="fa-facebook"></mat-icon>
+      </a>
+    </div>
+    <mat-icon class="menu-toggler" aria-label="Side nav toggle icon" (click)="isMenuShowed = !isMenuShowed">menu</mat-icon>
   </div>
 </header>

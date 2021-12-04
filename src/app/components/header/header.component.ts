@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  public isMenuShowed = false;
   public activeLink: string = '';
   public links: { title: string, route: string }[] = [
     {

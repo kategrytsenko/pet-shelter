@@ -8,3 +8,16 @@ $text-light-color: #e5e5e5;
 
 $background-light-color: $white;
 $background-dark-color: #4A4A4A;
+
+
+$header-height: 80px;
+$header-height--mobile: 45px;
+$section-bottom-margin: 40px;
+
+//
+//@mixin header-height {
+//  height: 80px;
+//  @media (max-width: 767px) {
+//    height: 60px;
+//  }
+//}

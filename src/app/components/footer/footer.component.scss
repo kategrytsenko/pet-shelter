@@ -1,0 +1,28 @@
+@import "./src/styles/vars";
+
+.l-footer {
+  width: 100%;
+  padding: 40px 40px 10px 40px;
+  background: $background-dark-color;
+  color: $text-light-color;
+  a {
+    color: $text-light-color;
+  }
+  &__info {
+    display: flex;
+    margin-bottom: 20px;
+    > p {
+      margin: 0 50px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      > p {
+        margin: 10px;
+        text-align: center;
+      }
+    }
+  }
+  &__rights {
+    font-size: 11px;
+  }
+}
