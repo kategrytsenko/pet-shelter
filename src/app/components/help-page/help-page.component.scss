@@ -1,0 +1,9 @@
+.l-help-page {
+  display: flex;
+  &__info {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px;
+  }
+}

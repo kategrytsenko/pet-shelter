@@ -32,11 +32,20 @@ export class MainPageComponent implements OnInit {
     {
       src: 'assets/7.jpeg'
     },
-    {
-      src: 'assets/8.jpeg'
-    },
+    // {
+    //   src: 'assets/8.jpeg'
+    // },
     {
       src: 'assets/9.jpeg'
+    },
+    {
+      src: 'assets/10.jpeg'
+    },
+    // {
+    //   src: 'assets/12.jpg'
+    // },
+    {
+      src: 'assets/14.jpg'
     }
   ];
 

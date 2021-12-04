@@ -50,12 +50,12 @@ $section-bottom-margin: 40px;
 .l-main-page {
   &__banner {
     width: 100%;
-    margin-bottom: $section-bottom-margin;
-    padding: 20px 0;
+    //margin-bottom: $section-bottom-margin;
+    //padding: 20px 0;
     //background: $color-primary;
     //background: $color-accent;
     //background: $background-light-color;
-    background: lighten($color-primary, 20%);
+    //background: lighten($color-primary, 20%);
     &-info {
       margin-top: 50px;
     }
@@ -75,30 +75,18 @@ $section-bottom-margin: 40px;
 .l-about-us {
   display: flex;
   margin-bottom: $section-bottom-margin;
-}
-
-.l-info-block {
-  padding: 40px;
+  &__info {
+    padding-left: 40px;
+  }
 }
 
 .l-animals {
-  display: flex;
-  justify-content: space-between;
+  //display: flex;
+  //justify-content: space-between;
   &__gallery {
-    width: 40%;
+    //width: 40%;
   }
 }
-
-.l-help-page {
-  display: flex;
-  justify-content: center;
-  &__info {
-    max-width: 400px;
-    text-align: center;
-  }
-}
-
-
 
 .l-footer {
   width: 100%;
